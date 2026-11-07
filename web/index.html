@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Albero filogenetico degli LLM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="mock-banner" hidden>DATI FINTI (mock) – non usare nella demo</div>
+  <div class="app">
+    <aside id="sidebar">
+      <header>
+        <h1>Albero filogenetico degli LLM</h1>
+        <p id="status">Caricamento dei dati…</p>
+      </header>
+      <section id="controls" aria-label="Controlli"></section>
+      <section id="legend" aria-label="Legenda"></section>
+    </aside>
+    <main id="viz-wrap">
+      <svg id="viz" role="img" aria-label="Cladogramma dei modelli linguistici con colonne allineate"></svg>
+    </main>
+  </div>
+  <script src="lib/d3.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
